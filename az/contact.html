@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Əlaqə və bron</title>
+  <meta name="description" content="Hijama üçün seans bronu və əlaqə formu. Ünvan, telefon və iş saatları."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/logo.jpeg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="/images/logo.jpeg" />
+  <link rel="stylesheet" href="/styles/base.css"/>
+  <link rel="stylesheet" href="/styles/layout.css"/>
+  <link rel="stylesheet" href="/styles/components.css"/>
+  <script defer src="/scripts/inject-shared.js"></script>
+  <script defer src="/scripts/form-contact.js"></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="section booking">
+    <div class="container">
+      <h1 id="book" class="page-head">Seans bronu və əlaqə</h1>
+      <p class="page-subhead">Qısa formu doldurun — ən qısa zamanda geri dönüş edək.</p>
+      <div class="grid booking-grid">
+        <form class="card card--soft form booking-form" id="contactForm">
+          <div>
+            <label for="name">Ad, Soyad</label>
+            <input id="name" name="name" class="input" placeholder="Adınızı daxil edin"/>
+          </div>
+          <div>
+            <label for="email">E-poçt</label>
+            <input id="email" name="email" type="email" class="input" placeholder="example@mail.com"/>
+          </div>
+          <div>
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" class="input" placeholder="+994 __ ___ __ __"/>
+          </div>
+          <div>
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" rows="5" class="input" placeholder="Qısa təsvir..."></textarea>
+          </div>
+          <button class="btn btn-primary booking-submit" type="submit">Göndər</button>
+          <div id="formMsg" class="form-msg" aria-live="polite"></div>
+        </form>
+        <aside>
+          <div class="card card--soft">
+            <h3>Əlaqə</h3>
+            <p>Həsən Əliyev küç.103 (Gənclik M/s yaxınlığı)</p>
+            <p><a href="tel:+994708185030">+994(70) 818 5030</a></p>
+            <p>İş saatları: B.e–Şənbə, 9:00–19:00</p>
+            <p><a class="btn btn-outline" href="https://wa.me/994708185030" target="_blank" rel="noopener">WhatsApp-la yazın</a></p>
+          </div>
+          <div class="card card--soft" id="map">
+            <h3>Xəritə</h3>
+            <iframe
+              title="Xəritə"
+              width="100%" height="260" style="border:0;border-radius:10px"
+              loading="lazy" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Gənclik+Baku&output=embed">
+            </iframe>
+            <small>Qeyd: dəqiq pin üçün Google Maps linkini sonradan yeniləyəcəyik.</small>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
